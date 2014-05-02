@@ -1,0 +1,36 @@
+<h1>All the animals that live in the internet</h1>
+
+<!-- <%= link_to 'New animal', new_idea_path %> -->
+<%= button_to "New animal", new_idea_path, :method => "get" %>
+
+
+
+<div id="container" class="js-masonry" data-masonry-options='{ "columnWidth": 340, "itemSelector": ".article_index" }'>
+  <% @ideas.each do |idea| %>
+  <div class="article_index clearfix">
+    <h2><%= link_to idea.name, idea %></h2>
+    <p><%= idea.description %></p>
+    <img src="<%= idea.picture %>" />
+    <p><%= link_to 'Show', idea %> | <%= link_to 'Edit', edit_idea_path(idea) %> | <%= link_to 'Destroy', idea, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+  </div>
+  <% end %>
+</div>
+
+<br />
+<!-- <hr />
+
+<% @ideas.in_groups_of(3) do |group| %>
+  <div class="row">
+    <% group.compact.each do |idea| %>
+      <div class="span4">
+        <%= image_tag idea.picture_url, :width => '100%' if idea.picture.present? %>
+        <h4><%= link_to idea.name, idea %></h4>
+        <%= idea.description %>
+      </div>
+    <% end %>
+  </div>
+<% end %> -->
+
+
+
+

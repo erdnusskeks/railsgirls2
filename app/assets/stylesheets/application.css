@@ -1,0 +1,90 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+body {
+  padding-top: 100px;
+}
+
+footer {
+  margin-top: 100px;
+}
+
+h1 {
+  color: #004499;
+}
+
+/* table, td, th {
+  vertical-align: middle;
+  border: none;
+ }
+
+ th {
+  border-bottom: 1px solid #DDD;
+ }*/
+
+ img {
+  width: 100%;
+  border: 3px solid #17B0FC;
+  margin-bottom: 5px;
+ }
+
+a {
+  color: #000;
+  &:visited {
+    color: #666;
+  }
+  &:hover {
+    color: #fff;
+    background-color: #17B0FC;
+  }
+}
+
+p a:hover {
+  background-color: #17B0FC;
+}
+
+/*.article_index entspricht .item*/
+.article_index {
+  /*width: 340px;*/
+  width: 25%;
+  background-color: #E3E5E6;
+  border-radius: 20px;
+  margin: 20px 20px 20px 0;
+  padding: 0 20px 5px;
+}
+
+#container {
+  /*width: 1000px;*/
+}
+
+.article_show {
+  width: 390px;
+  background-color: #E3E5E6;
+  border-radius: 20px;
+  margin: 20px 20px 20px 0;
+  padding: 15px 20px 5px;
+}
+
+/*.clear {
+  clear: both;
+}*/
+
+
+
+
+
+/* MEMORY MEMORY MEMORY MEMORY MEMORY MEMORY MEMORY MEMORY MEMORY */
+#memory img {
+  width: 100px;
+}
