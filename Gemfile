@@ -4,7 +4,9 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.0'
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# gem 'sqlite3'
+gem 'pg'
+
 gem 'carrierwave'
 # gem 'rmagick', '~> 2.13.2'
 
@@ -49,3 +51,4 @@ end
 # gem 'debugger', group: [:development, :test]
 
 gem 'rails_12factor', group: :production
+ruby "2.1.1"

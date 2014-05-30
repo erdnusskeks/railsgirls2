@@ -1,7 +1,8 @@
 Railsgirls2::Application.routes.draw do
   get "memory/memory"
   get "pages/info"
-  root :to => redirect('/ideas')
+  # root :to => redirect('/ideas')
+  root "welcome#index"
   resources :ideas
 
   # The priority is based upon order of creation: first created -> highest priority.
