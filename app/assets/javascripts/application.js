@@ -47,7 +47,7 @@ var anzahlVersuche = 0;
 function neuesSpiel() {
     aufgedeckt = 0;
     anzahlVersuche = 0;
-    document.getElementById('anzVersuche').value = 0;
+    document.getElementById('anzahlVersuche').value = 0;
     for (var i = 0; i < 24; ++i) {
         buchstaben[i] = parseInt(i / 2) + 1;               // Array mit 24 Elementen. Zum Ergebnis von parseInt wird 1 addiert (keine weiteren Klammern nötig)
         // buchstaben[i] = Math.floor(i / 2) +1;          // Math.floor(); => Nachkommastellen werden abgeschnitten
@@ -125,7 +125,7 @@ function testKarte(evt) {
             bild2 = buchstaben[karte];
             karte2 = karte;
             anzahlVersuche++;
-            document.getElementById('anzVersuche').value = anzahlVersuche;
+            document.getElementById('anzahlVersuche').value = anzahlVersuche;
         }
 
         if (aufgedeckt === 0) {
